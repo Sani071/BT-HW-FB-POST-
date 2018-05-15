@@ -1,0 +1,11 @@
+{
+  "name": "facebook-posting_page",
+  "version": "1.0.0",
+  "description": "",
+  "author": "RS Sani Ahmed",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}

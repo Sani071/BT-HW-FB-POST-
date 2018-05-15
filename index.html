@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BT HW</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="myjumbotron">
+        <div class="topbar">
+          <div class="row top">
+            <div class="col-3 pen">
+              <span>
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+              </span>
+              <span>Create a Post</span>
+            </div>
+            <div class="col-3">
+              <span>
+                <i class="fa fa-image" aria-hidden="true"></i>
+              </span>
+              <span>Photo/Video Album</span>
+            </div>
+            <div class="col-3">
+              <span>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+              </span>
+              <span>Live Video</span>
+            </div>
+            <div class="col-3">
+              <p class="cancel">X</p>
+            </div>
+          </div>
+        </div>
+        <div class="row inputarea">
+          <div class="col-2 proarea">
+            <h3 class="protitle" id="roundProph"></h3>
+          </div>
+          <div class="col-10 ">
+              <input id="nameField" type="text" placeholder="write your name">
+            <input type="text" name="" id="" class="inputbox" placeholder="Write Your Post Here">
+           
+          </div>
+        </div>
+        <div class="row btm">
+          <div class="col-11">
+            <ul class="bgColorList">
+              <li onclick="changeBgColor(id)" class="red cname" id="red">red</li>
+              <li onclick="changeBgColor(id)" class="green cname" id="green">green</li>
+              <li onclick="changeBgColor(id)" class="Gainsboro cname" id="Gainsboro">Gainsboro</li>
+              <li onclick="changeBgColor(id)" class="blue cname" id="blue">blue</li>
+              <li onclick="changeBgColor(id)" class="gray cname" id="gray">gray</li>
+              <li onclick="changeBgColor(id)" class="yellow cname" id="yellow">yellow</li>
+              <li onclick="changeBgColor(id)" class="Beige cname" id="Beige">Beige</li>
+              <li onclick="changeBgColor(id)" class="salmon cname" id="salmon">salmon</li>
+              <li class="nav-link px-4">(BG-Color))</li>
+            </ul>
+            <ul class="fontColorList">
+              <li onclick="changeFontColor(id)" class="red cname" id="red">red</li>
+              <li onclick="changeFontColor(id)" class="green cname" id="green">green</li>
+              <li onclick="changeFontColor(id)" class="Gainsboro cname" id="Gainsboro">Gainsboro</li>
+              <li onclick="changeFontColor(id)" class="blue cname" id="blue">blue</li>
+              <li onclick="changeFontColor(id)" class="gray cname" id="gray">gray</li>
+              <li onclick="changeFontColor(id)" class="yellow cname" id="yellow">yellow</li>
+              <li onclick="changeFontColor(id)" class="Beige cname" id="Beige">Beige</li>
+              <li onclick="changeFontColor(id)" class="salmon cname" id="salmon">salmon</li>
+              <li class="nav-link">(Font-Color))</li>
+            </ul>
+          </div>
+          <div class="col-1">
+            <button class="btn btn-primary postbtn">POST</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container postwrapper">
+    <div class="header-wrapper">
+      <div class="header">
+        <h3 class="round" id="roundProp"></h3>
+        <h5 id="title"></h5>
+      </div>
+      <small id="time" >1</small><small class="mx-4">m</small>
+    </div>
+    <div class="textarea"> 
+    </div>
+    <hr>
+    <hr>
+    <div class="bottom-area">
+      <div class="row">
+        <div class="col-4">
+          <i class="fa action-btn like-btn fa-thumbs-up" aria-hidden="true"></i>
+          <span>Like</span>
+        </div>
+        <div class="col-4">
+          <i class="fa action-btn cmnt-btn fa-comment-o" aria-hidden="true"></i>
+          <span>Comment</span>
+        </div>
+        <div class="col-4">
+          <i class="fa action-btn fa-share" aria-hidden="true"></i>
+          <span>Share</span>
+        </div>
+      </div>
+      <hr>
+      <hr>
+    </div>
+    <div class="cmnt-wrapper">
+      <div class="row">
+        <div class="col-1">
+          <h3 class="round" id="roundProcw"></h3>
+        </div>
+        <div class="col-11">
+          <input type="text" class="cmnt-fld">
+          <button class="btn btn-primary cmnt-send-btn">Comment</button>
+        </div>
+      </div>
+      <div class="row mx-5 cmnt-view-wrapper">
+        <div class="col-1">
+          <h3 class="round" id="roundProc"></h3>
+        </div>
+        <div class="col-11">
+          <p class="cmnt-view">
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
